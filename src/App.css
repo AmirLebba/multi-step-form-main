@@ -10,6 +10,24 @@
   --Alabaster: hsl(231, 100%, 99%);
   --White: hsl(0, 0%, 100%);
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 * {
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
@@ -23,8 +41,15 @@ body {
 }
 #root {
   height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 header {
+  position: absolute;
+  top: 0;
   max-width: 750px;
   width: 100%;
   min-height: 170px;
@@ -35,28 +60,27 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  gap: 20px;
+  gap: 25px;
 }
 header div {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   border-radius: 50%;
   border: 1px solid var(--White);
   padding: 5px;
   color: var(--Alabaster);
 }
-article{
-    max-width: 310px;
-    width: 100%;
-    min-height: 380px;
-    background-color: var(--Alabaster);
-    padding: 10px;
-   position: absolute;
-   margin: 5px;
-   border-radius: 10px;
-   top: 90px;
-
+article {
+  max-width: 450px;
+  width: 100%;
+  min-height: 380px;
+  background-color: var(--Alabaster);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  position: relative;
+  top: -156px;
 }
 footer {
   max-width: 750px;

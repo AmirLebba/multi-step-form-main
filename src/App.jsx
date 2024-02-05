@@ -5,6 +5,11 @@ import Form from './first-form/Form'
 
 
 function App() {
+  const [step, setStep] = useState(1);
+  const handleFormSubmit = (data) => {
+    setFormData({ ...formData, ...data });
+    setStep(step + 1);
+  };
 
   return (
     <>
@@ -18,10 +23,10 @@ function App() {
         <Form />
       </article>
       <footer>
-        <button>Next Step</button>
+        <button onClick={() => setStep(step + 1)}>Next Step</button>
       </footer>
     </>
-  )
+  );
 }
 
 export default App
