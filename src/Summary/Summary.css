@@ -1,0 +1,91 @@
+.steps {
+  
+}
+
+.summary-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.plan-summary, .addons-summary, .total-summary {
+  margin-bottom: 20px;
+}
+
+.plan-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Marine-blue);
+  
+}
+.plan-summary div {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-summary h2 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.change-link {
+  margin-top: 5px;
+  color: var(--Cool-gray);
+  cursor: pointer;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+.change-link:hover{
+    color: var(--Purplish-blue);
+}
+.plan-price{
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.addons-summary {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.addon-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  
+}
+.addon{
+    color: var(--Cool-gray);
+    margin-top: 10px;
+}
+
+.addon-price {
+  font-weight: 400;
+  color: var(--Marine-blue);
+  font-size: 0.8em;
+}
+
+.total-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total {
+    color: var(--Cool-gray);
+    font-size: 1em;
+}
+.total-price{
+    color: var(--Purplish-blue);
+    font-size: 1em;
+}
+
+
+

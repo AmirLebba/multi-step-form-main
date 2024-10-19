@@ -1,0 +1,142 @@
+.AddonsOptions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.AddonsOptions button {
+    display: flex;
+    padding: 15px;
+    border: 1px solid var(--Cool-gray);
+    border-radius: 5px;
+   
+}
+.AddonsOptions button:focus{
+    border: 1px solid var(--Marine-blue);
+}
+/* Step3.css */
+.AddonsOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.checkboxContainer.selected {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+.checkboxContainer h2,
+.checkboxContainer p,
+.checkboxContainer h3 {
+  margin: 0;
+  padding: 0 10px;
+  letter-spacing: 0.4px;
+}
+.checkboxContainer h2{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--Marine-blue);
+}
+.checkboxContainer p{
+    font-size: 10px;
+    color: var(--Cool-gray);
+    margin-top: 5px;
+}
+.checkboxContainer h3{
+    font-size: 13px;
+    color: var(--Purplish-blue);
+}
+
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--Purplish-blue);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.checkboxContainer.selected .checkmark {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+.checkboxContainer .info {
+  
+  gap: 0  ;
+  flex: 1;
+  text-align: left;
+}
+.info h2 {
+ 
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--Marine-blue);
+}
+.info p {
+  font-size: 13px;
+  color: var(--Cool-gray);
+  margin-top: 5px;
+}
+
+.checkboxContainer .price {
+  text-align: right;
+}
+.checkboxContainer:hover {
+  border-color: var(--Purplish-blue);
+  
+}.checkboxContainer:checked {
+  border-color: var(--Purplish-blue);
+  
+}
+
+@media screen and (min-width: 750px) {
+  .AddonsOptions {
+    
+    gap: 0;
+  }
+  .checkboxContainer {
+    max-width: 470px;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+.checkboxContainer .info {
+  display: block  ;
+}
+  
+}
